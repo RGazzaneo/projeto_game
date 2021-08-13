@@ -1,0 +1,53 @@
+Jogo - Sudoku
+
+Funcionamento Geral:
+
+-o jogo vai apresentar uma matriz 9x9 com alguns numeros
+-o jogador insere as coordenadas do ponto que quer e o valor a ser inserido
+-jogo mostra contador de numeros (0 a 9) para o usuario saber qnts numero de cada ja foram marcados
+-se houver um numero na mesma linha ou no mesmo quadrado preenche com X
+- qundo todos os qudrados forem preenchidos exibir mensagem de paragens
+
+----------------------------------------------------------------------------------------------------
+
+Instruções:
+
+"complete todas as células usando números de 1 a 9, sem repetir os números numa mesma linha, coluna ou grade (3x3)
+
+Para preencher a celula de as coordenadas X,Y e no numero a ser inserido - exemplo: (3,9,7)
+Para apagar a celula de as coordenadas X,Y, numero a ser apagado no formato negativo - exemplo: (3,9,-7)
+
+----------------------------------------------------------------------------------------------------
+
+Pseudo-Codigo:
+
+- criar matriz completa
+- criar matriz a ser exibida
+- exibir istruçoes -> deseja continuar?
+
+ -exibir a matriz (dercobrir como apresentar caralha essa matriz)
+
+loop
+|	- abrir janela de input
+|	- verificar se escreve ou apaga
+|
+|	- rodar função varredura em x
+|	- rodar função varredura em y
+|	- rodar função que verifica 3x3
+|
+|	- se não tiver nenhum numero igual o inserido 	-> exibir numero inserido na matriz atualizada
+|							-> atualizar barra de contador de numeros
+|							-> verificar qnts numeros faltam
+|								se ainda tem numero voltar pro input
+|								se nao tem xibir "parabens"
+|
+|		else: no lugar do numero e dizer ja existe "numero" nessa (linha/coluna/quadra)
+|		continuar?
+|			se não exibir solução
+|_
+
+import ipywidgets as widgets
+button = widgets.Button(description='My Button')
+button
+
+
