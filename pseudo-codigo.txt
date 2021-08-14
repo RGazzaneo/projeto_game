@@ -28,8 +28,8 @@ Pseudo-Codigo:
  -exibir a matriz (dercobrir como apresentar caralha essa matriz)
 
 loop
-|	- abrir janela de input
-|	- verificar se escreve ou apaga
+|	- abrir janela de função input
+|		 verificar se escreve ou apaga
 |
 |	- rodar função varredura em x
 |	- rodar função varredura em y
